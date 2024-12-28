@@ -49,11 +49,11 @@ delete_file <- function(
 
     #---------------------------------------------------------------------------
     # Build parameters of the request
-    task <- "delete"
-        base_url <- Sys.getenv("OPENAI_API_BASE_URL")
-        print(base_url)
+        
+    base_url <- Sys.getenv("OPENAI_API_BASE_URL")
+    print(base_url)
 
-    base_url <- glue::glue("{base_url}/{task}")
+    base_url <- glue::glue("{base_url}/files/{file_id}")
 
     headers <- c(
         "Authorization" = paste("Bearer", openai_api_key),
