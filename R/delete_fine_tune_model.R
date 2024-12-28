@@ -58,7 +58,7 @@ delete_fine_tune_model <- function(
     base_url <- Sys.getenv("OPENAI_API_BASE_URL")
         print(base_url)
 
-    base_url <- glue::glue("{base_url}/{task}")
+    base_url <- glue::glue("{base_url}/models/{model}")
 
     headers <- c(
         "Authorization" = paste("Bearer", openai_api_key),
