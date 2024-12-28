@@ -42,7 +42,11 @@ list_fine_tunes <- function(
     #---------------------------------------------------------------------------
     # Build parameters of the request
 
-    base_url <- "https://api.openai.com/v1/fine-tunes"
+    base_url <- Sys.getenv("OPENAI_API_BASE_URL")
+        print(base_url)
+
+    base_url <- glue::glue("{base_url}/fine-tunes")
+
 
     headers <- c(
         "Authorization" = paste("Bearer", openai_api_key),
