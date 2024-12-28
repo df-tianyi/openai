@@ -104,7 +104,10 @@ create_transcription <- function(
 
     task <- "audio/transcriptions"
 
-    base_url <- glue::glue("https://api.openai.com/v1/{task}")
+    base_url <- Sys.getenv("OPENAI_API_BASE_URL")
+        print(base_url)
+
+    base_url <- glue::glue("{base_url}/{task}")
 
     headers <- c(
         "Authorization" = paste("Bearer", openai_api_key),
