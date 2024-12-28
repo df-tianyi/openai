@@ -61,8 +61,8 @@ list_engines <- function(
 
     #---------------------------------------------------------------------------
     # Build parameters of the request
-
-    base_url <- Sys.getenv("OPENAI_API_BASE_URL")
+    task <- "engines"
+        base_url <- Sys.getenv("OPENAI_API_BASE_URL")
         print(base_url)
 
     base_url <- glue::glue("{base_url}/{task}")
