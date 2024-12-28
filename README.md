@@ -28,7 +28,7 @@ Downloads](https://cranlogs.r-pkg.org/badges/grand-total/openai?color=brightgree
 > gradually and gently depricated. One can install the development
 > verion using:
 >
->     remotes::install_github("irudnyts/openai", ref = "r6")
+>     remotes::install_github("df-tianyi/openai", ref = "r6")
 >
 > Then, the code will look like:
 >
