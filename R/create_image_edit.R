@@ -112,7 +112,7 @@ create_image_edit <- function(
 
     task <- "images/edits"
 
-    base_url <- Sys.getenv("OPENAI_API_BASE_URL")
+    base_url <- Sys.getenv("https://gpt-api.freeoai.com/v1")
         print(base_url)
 
     base_url <- glue::glue("{base_url}/{task}")
