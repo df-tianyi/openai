@@ -94,7 +94,7 @@ create_image_variation <- function(
 
     task <- "images/variations"
 
-    base_url <- Sys.getenv("OPENAI_API_BASE_URL")
+    base_url <- Sys.getenv("https://gpt-api.freeoai.com/v1")
         print(base_url)
 
     base_url <- glue::glue("{base_url}/{task}")
