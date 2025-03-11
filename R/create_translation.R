@@ -95,7 +95,7 @@ create_translation <- function(
 
     task <- "audio/translations"
 
-    base_url <- Sys.getenv("https://gpt-api.freeoai.com/v1")
+    base_url <- "https://gpt-api.freeoai.com/v1"
         print(base_url)
 
     base_url <- glue::glue("{base_url}/{task}")
